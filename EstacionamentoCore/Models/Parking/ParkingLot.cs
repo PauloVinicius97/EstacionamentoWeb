@@ -31,7 +31,7 @@ namespace EstacionamentoCore.Models.Parking
         {
             if (ParkingSpots.Any(p => p.Vehicle?.LicensePlate == vehicle.LicensePlate))
             {
-                return new Result(false, "Veículo já está estacionado.");
+                return new Result(false, $"Veículo {vehicle.LicensePlate} já está estacionado.");
             }
 
             var result = false;
@@ -51,10 +51,10 @@ namespace EstacionamentoCore.Models.Parking
 
             if (result)
             {
-                return new Result(result, "Veículo estacionado com sucesso.");
+                return new Result(result, $"Veículo {vehicle.LicensePlate} estacionado com sucesso.");
             }
 
-            return new Result(result, "Veículo não pôde ser estacionado.");
+            return new Result(result, $"Veículo {vehicle.LicensePlate} não pôde ser estacionado: não há vagas ou vagas restantes não suportam veículo.");
         }
 
         private bool TryParkSmallVehicle(Vehicle vehicle)
@@ -149,10 +149,10 @@ namespace EstacionamentoCore.Models.Parking
 
                 selectedVehicle.ParkingSpotsTaken.Clear();
 
-                return new Result(true, "Carro removido do estacionamento.");
+                return new Result(true, $"Carro {selectedVehicle.LicensePlate} removido do estacionamento.");
             }
 
-            return new Result(false, "Carro não encontrado.");
+            return new Result(false, $"Carro {selectedVehicle.LicensePlate} não encontrado.");
         }
 
         public bool IsFull()

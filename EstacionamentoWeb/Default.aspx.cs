@@ -35,6 +35,8 @@ namespace EstacionamentoWeb
 
             MessagePanel.Visible = true;
             Message.Text = result.Message;
+
+            LicensePlate.Text = "";
             
             UpdateParkingSpotsDataSource();
             UpdateVehiclesDataSource();
@@ -92,6 +94,7 @@ namespace EstacionamentoWeb
             UpdateVehiclesDataSource();
 
             BiggerParkingLot.Visible = false;
+            MessagePanel.Visible = false;
         }
     }
 }
