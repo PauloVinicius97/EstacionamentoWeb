@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstacionamentoWeb", "EstacionamentoWeb\EstacionamentoWeb.csproj", "{550ED2BF-50BF-4B45-98C8-85BC6D95ECBC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5} = {CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstacionamentoCore", "EstacionamentoCore\EstacionamentoCore.csproj", "{CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{550ED2BF-50BF-4B45-98C8-85BC6D95ECBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550ED2BF-50BF-4B45-98C8-85BC6D95ECBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550ED2BF-50BF-4B45-98C8-85BC6D95ECBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550ED2BF-50BF-4B45-98C8-85BC6D95ECBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0AC3DD-FA71-4D68-A1D3-C35C3C4CACF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB3E6E9C-F01E-43C2-8A22-6E25A527AFB8}
+	EndGlobalSection
+EndGlobal
