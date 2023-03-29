@@ -41,7 +41,7 @@
                 <asp:ListItem Text="Van" />
             </asp:DropDownList>
 
-            <asp:Button ID="Park" CssClass="my-2 btn btn-primary btn-md" Text="Estacionar" ValidationGroup="LicensePlateValidator" OnClick="Park_Click" runat="server" />
+            <asp:Button ID="Park" CssClass="my-4 btn btn-primary btn-md" Text="Estacionar" ValidationGroup="LicensePlateValidator" OnClick="Park_Click" runat="server" />
         </asp:Panel>
 
         <asp:Panel ID="RemoveVehicle" runat="server" CssClass="col-md-4 d-flex flex-column">
@@ -107,7 +107,7 @@
                 <asp:Button ID="BiggerParkingLot" 
                     Text="Gerar estacionamento maior" 
                     OnClick="BiggerParkingLot_Click" 
-                    CssClass="my-2 btn btn-primary btn-md"
+                    CssClass="my-4 btn btn-primary btn-md"
                     runat="server" />
             </div>
         </asp:Panel>
