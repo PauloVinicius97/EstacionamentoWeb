@@ -28,7 +28,7 @@ Não é possível estacionar sem uma placa. O botão "Gerar estacionamento maior
 
 ## To-dos
 
-Assim como um [livro nunca é terminado, mas sim abandonado](https://www.goodreads.com/quotes/192509-a-book-is-never-finished-it-s-abandoned), creio que sempre existem pontos de evolução e melhoria de um programa. Eis alguns pontos que gostaria de explorar no futuro:
+Assim como um [livro nunca é terminado, mas sim abandonado](https://www.goodreads.com/quotes/192509-a-book-is-never-finished-it-s-abandoned), creio que sempre existam pontos de evolução e melhoria de um programa. Eis alguns pontos que gostaria de explorar no futuro:
 
 - Fazer com que vagas pequenas, médias e grandes herdem de uma "vaga pai" e contenham lógica para estacionar veículos de acordo com as regras do estacionamento;
 - Indicar no README qual é a lógica do estacionamento;
