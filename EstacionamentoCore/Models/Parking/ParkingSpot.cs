@@ -6,13 +6,15 @@ namespace EstacionamentoCore.Models.Parking
     public class ParkingSpot
     {
         public Guid Id { get; private set; }
+        public Guid ParkingLotId { get; private set; }
         public string Name { get; private set; }
         public string Size { get; private set; }
         public Vehicle Vehicle { get; private set; }
 
-        public ParkingSpot(string name, string size)
+        public ParkingSpot(Guid parkingLotId, string name, string size)
         {
             this.Id = Guid.NewGuid();
+            this.ParkingLotId = parkingLotId;
             this.Name = name;
             this.Size = size;
         }

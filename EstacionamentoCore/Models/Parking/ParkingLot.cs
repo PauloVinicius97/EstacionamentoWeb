@@ -2,6 +2,7 @@
 using EstacionamentoCore.Models.Utils;
 using EstacionamentoCore.Models.Vehicles;
 using EstacionamentoCore.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,11 +10,14 @@ namespace EstacionamentoCore.Models.Parking
 {
     public class ParkingLot
     {
+        public Guid Id { get; private set; }
+        public string Name { get; private set; }
         public List<ParkingSpot> ParkingSpots { get; private set; }
 
-        public ParkingLot(List<ParkingSpot> parkingSpots)
+        public ParkingLot()
         {
-            this.ParkingSpots = parkingSpots;
+            this.Id = Guid.NewGuid();
+            this.ParkingSpots = new List<ParkingSpot>();
         }
 
         public Result CreateAndTryParkVehicle(string type, string licensePlate)
